@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test Web App</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container bg-white">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1 class="mb-5 mt-3">Typing Test</h1>
+        </div>
+      </div>
+
+      <div class="row my-2">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-around">
+            <p class="text-center mt-3">
+              Timer:
+              <span class="timer text-danger fw-semibold">30s</span>
+            </p>
+
+            <p>
+              Mistakes: <span class="mistakes text-danger fw-semibold">0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center mt-4 mb-3">
+        <div class="col-12">
+          <p
+            class="content"
+            onmousedown="return false"
+            onselectstart="return false"
+          ></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <textarea
+            class="form-control"
+            id="input"
+            placeholder="Start typing here..."
+            autocomplete="off"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="row my-2 speed-accuracy">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-around">
+            <p class="text-center mt-3">
+              Speed:
+              <span class="wpm text-success fw-semibold">0</span> wpm
+            </p>
+
+            <p class="text-center mt-3">
+              <span class="text-success fw-semibold">Accuracy:</span>
+              <span class="accuracy">0</span>%
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center mt-4">
+        <div class="col-12">
+          <button class="btn btn-primary px-4 py-2" id="start">Again</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
